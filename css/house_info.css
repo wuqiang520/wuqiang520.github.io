@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* 导航条 */
+.navbar{
+    background-color: #F8F8F8;
+    border-bottom: 1px solid #E6E4E6;
+}
+.nav_r{
+    width:250px;
+    height:52px;
+    /* background-color: */
+    line-height: 52px;
+    text-align: center;
+}
+.navbar-right li{
+    text-align: center;
+}
+#con{
+    width:1200px;
+    height:400px;
+    display:flex;
+    margin:0 auto;
+}
+.breadcrumb{
+    width:1200px;
+    position: relative;
+    left:50%;
+    margin-left:-600px;
+    background-color: #fff;
+}
+/* 轮播图 */
+.bg{
+    width:700px;
+    height:400px;
+    margin:0 0;
+}
+.carousel-inner .item img{
+    width:700px;
+    height:400px;
+}
+/* house_info */
+.house_info{
+    margin-left:40px;
+    width:400px;
+    height:400px;
+}
+.price{
+    width:100%;
+    height:80px;
+    font-size: 50px;
+    line-height: 80px;
+    color:#DB4C3F;
+    border-bottom: 1px solid #EEEEEE;
+}
+.price span:first-child{
+    font-size: 16px;
+    color:#DB4C3F;
+}
+.price span:last-child{
+    display: inline-block;
+    height:40px;
+    margin-left:20px;
+    font-size: 12px;
+    color:#BABBBC;
+}
+.base_info{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #EEEEEE;
+}
+.base_info >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:auto;
+    
+}
+.base_info .sp{
+    font-size: 20px;
+}
+.base_info1{
+    width:100%;
+    height:105px;
+    border-bottom: 1px solid #EEEEEE;
+}
+.base_info1 p{
+    margin-top:20px;
+}
+.base_info1 p span{
+    color:#999;
+}
+.rent{
+    width:100%;
+    height:100px;
+    border-bottom: 1px solid #DDD;
+}
+.btn-primary{
+    width:50%;
+    margin:0 auto;
+    margin-top:30px;
+    margin-left:100px;
+}
+/* footer */
+/* footer */
+#footer{
+    width: 100%;
+    height: 80px;
+    /* position:fixed; */
+    /* bottom: 0; */
+    /* left:0; */
+    margin-top:50px;
+    background-color: #222324;
+}
+#footer #aboutus{
+    padding: 20px;
+    height: 60px;
+}
+#footer #aboutus a{
+    float: left;
+    display: inline-block;
+    margin-right: 45px;
+    color: #fff;
+    font-size: 14px;
+}
+#footer #aboutus a img{
+    margin-top: -6px;
+}
+#footer #aboutus span{
+    color: #8E8E8E;
+}
+#copy{
+    margin-top: 15px;
+    font-size: 12px;
+}

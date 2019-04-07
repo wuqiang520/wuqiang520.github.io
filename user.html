@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/user.css">
+    <title>Renting in Malaysia</title>
+</head>
+<body>
+    <!-- 导航条 -->
+    <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav ul1">
+                  <li class="active1"><a href="#">Buy<span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Rent</a></li>
+                  <li><a href="#">New Launches</a></li>
+                  <li><a href="#">Find Agent</a></li>
+                  <li><a href="#">Sell</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right nav_r">
+                <li>
+                    Welcome to:<span>user</span>&nbsp;&nbsp;<span><a href="index.html">Log out</a></span>
+                </li>            
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+    </nav>
+<!--用户信息 -->
+    <div class="userinfo">
+            <div id="userInfo_left">
+                <div class='photo'><img src="images/userphoto.png" alt=""></div>
+                <p>Welcome to:<span>user</span></p>
+                <ul>        
+                    <a href="#"><li class='active first_li'>Focus on housing</li></a>
+                    <a href=""><li>Concerned cell</li></a>
+                    <a href=""><li>The checking record</li></a>
+                    <a href=""><li class='last_li'>Edit data</li></a>
+                </ul>
+            </div>
+            <div class="userInfo_right right_show">
+                <p>A total of <span>0</span> sets of concern housing sources</p>
+                <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="#">The secondary</a></li>
+                        <li role="presentation"><a href="#">The new house</a></li>
+                        <li role="presentation"><a href="#">Rental housing</a></li>
+                </ul>
+                <div class="main_info">
+                    <img src="images/home.png" alt="">
+                    
+                    <p>You haven't looked at any houses yet</p>
+                </div>
+            </div>
+            <div class="userInfo_right right_hide">
+                    <p>My account information</p>
+                    <ul class="nav nav-tabs">
+                            <li role="presentation" class="active"><a href="#">Change the password</a></li>
+                            <li role="presentation"><a href="#">Add your email</a></li>
+                            <li role="presentation"><a href="#">Change the username</a></li>
+                    </ul>
+                    <!-- <div class="main_info">
+                        <img src="images/home.png" alt="">
+                        
+                        <p>You haven't looked at any houses yet</p>
+                    </div> -->
+                </div>
+    </div>
+
+<!-- footer -->
+<div id="footer" class="conmargin">
+		<div class="con" id="aboutus">
+			<div>
+				<a href="#">about us</a>
+				<a href="#">The development course</a>
+				<a href="#">feedback</a>
+				<a href="#"><img src="images/weibo.png" alt=""></a>
+				<span> Qq group：&nbsp;42931942</span>
+			</div>
+			<div class="clear"></div>
+			<div id="copy">
+				<span>Copyright&nbsp;(c)&nbsp;2013&nbsp;uelike.com.&nbsp;All&nbsp;Rights&nbsp;Reserved&nbsp;V&nbsp;1.8.5</span>
+			</div>
+		</div>
+	</div>
+
+    <script src='bootstrap-3.3.7-dist/js/jquery.min.js'></script>
+    <script src='bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
+    <script>
+        $('.userInfo_right li').on('click',function(){
+            $(this).toggleClass('active').siblings('li').removeClass('active');
+        })
+        $('#userInfo_left a li').on('click',function(e){
+            e.preventDefault();
+            $(this).toggleClass('active').parent('a').siblings('a').children('li').removeClass('active');
+        })
+        $('.last_li').on('click',function(){
+            $('.right_show').hide();
+            $('.right_hide').show();
+
+        })
+        $('.first_li').on('click',function(){
+            $('.right_show').show();
+            $('.right_hide').hide();
+
+        })
+    </script>
+</body>
+</html>
